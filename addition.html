@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition</title>
+
+    
+    <script>
+    function addd()
+    {
+
+        var n1=parseInt(document.getElementById("n1").value);
+        var n2=parseInt(document.getElementById("n2").value);
+        var sum=n1+n2;
+        if(!isNaN(sum))
+        document.getElementById("div1").innerHTML=sum;
+
+    }
+    
+    </script>
+</head>
+<body>
+    <input type="text" name="n1" id="n1"><br>
+    <input type="text" name="n2" id="n2"><br>
+    <br>
+    <button onclick="addd()">add</button>
+    <br><br>
+   <h1 id="div1"></h1>
+
+
+</body>
+</html>
